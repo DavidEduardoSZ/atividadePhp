@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5!</title>
+</head>
+
 <?php
  
 $alunos = [
@@ -14,7 +22,7 @@ $alunos = [
     ["nome" => "Lucas", "idade" => 20, "nota" => 8.9],
     ["nome" => "Mariana", "idade" => 18, "nota" => 9.4],
 ];
- 
+
 usort($alunos, function($a, $b) {
     return $b['nota'] <=> $a['nota'];
 });
@@ -54,3 +62,8 @@ echo "</tbody>
 echo "<br>"."Media das notas: " . number_format($media, 2, ',', '.');
  
 ?>
+
+
+<body>
+</body>
+</html>
